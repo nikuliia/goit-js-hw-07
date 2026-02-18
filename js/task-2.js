@@ -25,15 +25,6 @@ const images = [
   },
 ];
 
-// const arr = [];
-
-// for (i = 0; (i = images.length); i++) {
-//   const imgElem = document.createElement('img');
-//   arr.push(imgElem);
-// }
-
-// ulImgList.append(...arr);
-
 function imgTemplate(img) {
   return `<li>
         <img
@@ -47,8 +38,7 @@ function imgsTemplate(arr) {
 }
 
 const markup = imgsTemplate(images);
-console.log(markup);
 
 const ulImgList = document.querySelector('.js-list');
 
-ulImgList.innerHTML = markup;
+ulImgList.insertAdjacentHTML('beforeend', markup);
