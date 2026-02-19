@@ -1,5 +1,4 @@
-const form = document.querySelector('.js-form');
-const formBtn = document.querySelector('.js-btn');
+const form = document.querySelector('.login-form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -11,10 +10,9 @@ form.addEventListener('submit', e => {
       email: emailValue,
       password: passwordValue,
     };
+    form.reset();
     console.log(formData);
   } else {
     alert('All form fields must be filled in');
   }
-
-  form.reset();
 });

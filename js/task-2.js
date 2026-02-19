@@ -39,6 +39,6 @@ function imgsTemplate(arr) {
 
 const markup = imgsTemplate(images);
 
-const ulImgList = document.querySelector('.js-list');
+const ulImgList = document.querySelector('.gallery');
 
 ulImgList.insertAdjacentHTML('beforeend', markup);
